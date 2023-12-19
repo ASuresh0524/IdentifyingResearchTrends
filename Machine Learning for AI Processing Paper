@@ -17,16 +17,16 @@ df['Topic'] = your_gpc4_model.predict(df['Abstract'])
 
 # Statistical Analysis
 df['SubmissionDate'] = pd.to_datetime(df['SubmissionDate'])
-df['MonthYear'] = df['SubmissionDate'].dt.to_period('M')
+df['Year'] = df['SubmissionDate'].dt.to_period('M')
 
-# Count abstracts per month
-abstracts_per_month = df['MonthYear'].value_counts().sort_index()
+# Count abstracts per year
+abstracts_per_year = df['Year'].value_counts().sort_index()
 
 # Visualization of Submission Trends
 plt.figure(figsize=(10, 6))
-plt.plot(abstracts_per_month.index.astype(str), abstracts_per_month.values, marker='o')
-plt.title('Monthly Abstract Submissions Over Time')
-plt.xlabel('Month-Year')
+plt.plot(abstracts_per_year.index.astype(str), abstracts_per_year.values, marker='o')
+plt.title('Year Abstract Submissions Over Time')
+plt.xlabel('Year')
 plt.ylabel('Number of Abstracts')
 plt.xticks(rotation=45)
 plt.show()
@@ -34,14 +34,14 @@ plt.show()
 # Identification of Trends and Fluctuations
 covid_abstracts = df[df['Abstract'].str.contains('COVID-19')]
 
-# Count COVID-19 abstracts per month
-covid_abstracts_per_month = covid_abstracts['MonthYear'].value_counts().sort_index()
+# Count COVID-19 abstracts per year 
+covid_abstracts_per_year = covid_abstracts['Year'].value_counts().sort_index()
 
 # Visualization of COVID-19 Abstract Trends
 plt.figure(figsize=(10, 6))
-plt.plot(covid_abstracts_per_month.index.astype(str), covid_abstracts_per_month.values, marker='o', color='red')
-plt.title('Monthly COVID-19 Abstract Submissions Over Time')
-plt.xlabel('Month-Year')
+plt.plot(covid_abstracts_per_year.index.astype(str), covid_abstracts_per_year.values, marker='o', color='red')
+plt.title('Yearly COVID-19 Abstract Submissions Over Time')
+plt.xlabel('Year')
 plt.ylabel('Number of COVID-19 Abstracts')
 plt.xticks(rotation=45)
 plt.show()
