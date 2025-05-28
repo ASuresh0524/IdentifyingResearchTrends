@@ -55,17 +55,11 @@ The project analyzes DDW publications from 2018-2023, focusing on:
 2. Preprocessing: Cleaning and standardizing data
 3. Neural Network Analysis: GPC-4 implementation for trend identification
 4. Statistical Analysis: Multi-variable statistical analysis
-5. Visualization: Generation of figures and trends
-
-## Contributing
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+5. Visualization: Generation of figures and trends.
 
 ## Authors
 - Aakash Suresh 
-- [Collaborators]
+- Dr. John Clarke 
 
 ## Acknowledgments
 - Stanford University
