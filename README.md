@@ -1,2 +1,72 @@
-# StanfordDDWPaper
-This research  aims to analyze data sets from gastrointestinal (GI) publications in Digestive Disease Week (DDW) publications and examine the changes that have occurred over the past 5-6 years. Specifically, the paper investigates the increase in abstract publications and how the COVID-19 pandemic has influenced this trend. To accomplish this, a program utilizing the GPC-4 Neural Network is developed to scan through the data, sort and filter the relevant information, and identify any discrepancies or differences. The study extracts useful data from 5 years and organizes it into an Excel spreadsheet for further analysis using multi-variable statistics. The paper also explores the potential of using the GPC-4 Neural Network as a research assistant to assist in data extraction and analysis, thereby addressing medical and cultural disparities or biases in research. The overall goal is to identify and analyze trends observed in DDW meetings over the past 5 years. Additionally, this research paper aims to provide insights into the implications of the observed trends and their potential impact on the field of gastroenterology. By examining the increase in abstract publications, the paper seeks to understand the evolving research landscape and identify emerging areas of interest within GI research. The investigation into how the COVID-19 pandemic has influenced this trend will shed light on the adaptability of researchers and the prioritization of topics relevant to public health challenges. Furthermore, the development and utilization of the GPC-4 Neural Network as a tool for data analysis present a novel approach to improving research efficiency and addressing potential biases. By exploring the capabilities of this technology, this study strives to contribute to the advancement of equitable and rigorous research practices.
+# Analyzing Research Trends in Digestive Disease Week Publications
+
+## Project Overview
+This research project analyzes gastrointestinal (GI) publications from Digestive Disease Week (DDW) conferences over the past 5-6 years. The study focuses on:
+- Tracking changes in abstract publications
+- Analyzing the impact of COVID-19 on research trends
+- Utilizing GPC-4 Neural Network for data analysis
+- Identifying patterns and trends in gastroenterology research
+
+## Repository Structure
+```
+.
+├── data/
+│   ├── raw/                  # Original DDW abstract datasets
+│   └── processed/            # Cleaned and processed datasets
+├── src/
+│   ├── preprocessing/        # Data cleaning and preparation scripts
+│   ├── analysis/            # Statistical analysis scripts
+│   ├── visualization/       # Data visualization code
+│   └── models/              # GPC-4 Neural Network implementation
+├── tests/                   # Unit tests and integration tests
+├── docs/                    # Documentation and research notes
+│   └── figures/            # Generated figures and visualizations
+└── requirements/           # Project dependencies
+```
+
+## Setup Instructions
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/IdentifyingResearchTrends.git
+cd IdentifyingResearchTrends
+```
+
+2. Create a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies
+```bash
+pip install -r requirements/requirements.txt
+```
+
+## Data Collection
+The project analyzes DDW publications from 2018-2023, focusing on:
+- Abstract submissions
+- Research categories
+- Author demographics
+- COVID-19 related research
+- Geographic distribution
+
+## Analysis Pipeline
+1. Data Extraction: Automated scraping of DDW abstracts
+2. Preprocessing: Cleaning and standardizing data
+3. Neural Network Analysis: GPC-4 implementation for trend identification
+4. Statistical Analysis: Multi-variable statistical analysis
+5. Visualization: Generation of figures and trends
+
+## Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Authors
+- Aakash Suresh 
+- [Collaborators]
+
+## Acknowledgments
+- Stanford University
+- DDW Conference Organization
